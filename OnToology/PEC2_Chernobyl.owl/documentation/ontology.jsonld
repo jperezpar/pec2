@@ -1,0 +1,672 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#Release_Date"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#wasReleasedon"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid11",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#e"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#Episode"
+  } ]
+}, {
+  "@id" : "_:genid13",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#e"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#Good"
+  } ]
+}, {
+  "@id" : "_:genid14",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid22"
+    }, {
+      "@id" : "_:genid20"
+    }, {
+      "@id" : "_:genid16"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid24"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid16",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#BuiltinAtom" ],
+  "http://www.w3.org/2003/11/swrl#arguments" : [ {
+    "@list" : [ {
+      "@id" : "urn:swrl:var#r"
+    }, {
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+      "@value" : "6"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#builtin" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrlb#lessThan"
+  } ]
+}, {
+  "@id" : "_:genid2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#Location"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#wasRecordedin"
+  } ]
+}, {
+  "@id" : "_:genid20",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#s"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "urn:swrl:var#r"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#hasRating"
+  } ]
+}, {
+  "@id" : "_:genid22",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#s"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#Serie"
+  } ]
+}, {
+  "@id" : "_:genid24",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#s"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#Average"
+  } ]
+}, {
+  "@id" : "_:genid25",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid33"
+    }, {
+      "@id" : "_:genid31"
+    }, {
+      "@id" : "_:genid27"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid35"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid27",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#BuiltinAtom" ],
+  "http://www.w3.org/2003/11/swrl#arguments" : [ {
+    "@list" : [ {
+      "@id" : "urn:swrl:var#r"
+    }, {
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+      "@value" : "8"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#builtin" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrlb#greaterThan"
+  } ]
+}, {
+  "@id" : "_:genid3",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid11"
+    }, {
+      "@id" : "_:genid9"
+    }, {
+      "@id" : "_:genid5"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid13"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid31",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#s"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "urn:swrl:var#r"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#hasRating"
+  } ]
+}, {
+  "@id" : "_:genid33",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#s"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#Serie"
+  } ]
+}, {
+  "@id" : "_:genid35",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#s"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#Masterpiece"
+  } ]
+}, {
+  "@id" : "_:genid5",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#BuiltinAtom" ],
+  "http://www.w3.org/2003/11/swrl#arguments" : [ {
+    "@list" : [ {
+      "@id" : "urn:swrl:var#w"
+    }, {
+      "@value" : "good"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#builtin" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrlb#contains"
+  } ]
+}, {
+  "@id" : "_:genid9",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#e"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "urn:swrl:var#w"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#hasReview"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ]
+}, {
+  "@id" : "http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#Metacritic"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#Rottentomatoes"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#9",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#IMDB"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#AFI",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "American film institute awards"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#Awards"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#Actor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Actors in the film"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@language" : "en",
+    "@value" : "https://dbpedia.org/page/Actor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#Person"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#Actress",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Actress in the film"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#Person"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#Average",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#RatingDesc"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#Awards",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "List of main awards and nomitations receibed by Chernobyl"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#BAFTA",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "British Academy of Film and Television Arts awards"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#Awards"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#Character",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Main roles in in the serie"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#Person"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#Chernobyl",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#Serie"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#City",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Cities where the serie wa recorded"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#Location"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#Country",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Countries where the serie wa recorded"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#Location"
+  }, {
+    "@id" : "_:genid1"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#Creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Serie creator"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#Person"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#Emmy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Academy of Television Arts & Sciences awards"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@language" : "en",
+    "@value" : "https://dbpedia.org/page/Emmy_Awards"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#Awards"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#Episode",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "List of serie episodes"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#Seasons"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#Episode1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#Episode"
+  }, {
+    "@id" : "http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#Soundtracks"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#Episode2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#Episode"
+  }, {
+    "@id" : "http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#Soundtracks"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#Episode3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#Episode"
+  }, {
+    "@id" : "http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#Soundtracks"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#Genre",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "It defies the genre of the series and films, like drama commedy, etc."
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#Good",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#RatingDesc"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#IMDB",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Film rating site"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#Ratings"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#Italy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#Country"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#Jared_Harris",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#Actor"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#Jessie_Buckley",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#Actress"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#June2019",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#Release_Date"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#Kaunas",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#City"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#Lithuania",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#Country"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#Location",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Places where the serie was recorded and released"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#Lyudmilla_Ignatenko",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#Character"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#Masterpiece",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#RatingDesc"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#May2019",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#Release_Date"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#Metacritic",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Film rating site"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#Ratings"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#Oficial_sites",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Oficial sites to promete the film like, twitter, facebook, etc."
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#Person",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Cast & Crew of Chernobyl"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#RatingDesc",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Ratings description"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#Ratings",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Rating provided by some popular films review sites"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#Release_Date",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Dates when the serie was released"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#Reviews",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Reviews written by fans"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#Rottentomatoes",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Film rating site"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#Ratings"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#Season1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#Seasons"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#Seasons",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Serie seasons"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#Serie",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Name of the serie"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@language" : "en",
+    "@value" : "https://dbpedia.org/page/Series"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid2"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#Soundtracks",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "List of songs that you can find in different episodes of the serie"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#Spain",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#Country"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#Studio",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Company that created tghe serie, i.e Netfix, HBO, etc."
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#Ukraine",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#Country"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#Valery_Legasov",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#Character"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#Vilnius",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#City"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#hasRating",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Indicates the rating provided to the serie from different media sites"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#Serie"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#hasReview",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#Episode"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#mainCharacter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Indicates if a character is considered the most important in the serie"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#Character"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#wasRecordedin",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Places where the serie was recorded"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#Serie"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#Location"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#wasReleasedon",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Date when the serie wa released per country"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#Country"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#Release_Date"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2003/11/swrlb#contains",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Builtin" ]
+}, {
+  "@id" : "http://www.w3.org/2003/11/swrlb#greaterThan",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Builtin" ]
+}, {
+  "@id" : "http://www.w3.org/2003/11/swrlb#lessThan",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Builtin" ]
+}, {
+  "@id" : "urn:swrl:var#e",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+}, {
+  "@id" : "urn:swrl:var#r",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+}, {
+  "@id" : "urn:swrl:var#s",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+}, {
+  "@id" : "urn:swrl:var#w",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+} ]
