@@ -1,0 +1,454 @@
+@prefix : <http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#> .
+
+<http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#wasRecordedin
+:wasRecordedin rdf:type owl:ObjectProperty ;
+               rdfs:domain :Serie ;
+               rdfs:range :Location ;
+               rdfs:comment "Places where the serie was recorded"@en .
+
+
+###  http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#wasReleasedon
+:wasReleasedon rdf:type owl:ObjectProperty ;
+               rdfs:domain :Country ;
+               rdfs:range :Release_Date ;
+               rdfs:comment "Date when the serie wa released per country"@en .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#hasRating
+:hasRating rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Serie ;
+           rdfs:range xsd:int ;
+           rdfs:comment "Indicates the rating provided to the serie from different media sites"@en .
+
+
+###  http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#hasReview
+:hasReview rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Episode ;
+           rdfs:range rdfs:Literal .
+
+
+###  http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#mainCharacter
+:mainCharacter rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Character ;
+               rdfs:range xsd:boolean ;
+               rdfs:comment "Indicates if a character is considered the most important in the serie"@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#AFI
+:AFI rdf:type owl:Class ;
+     rdfs:subClassOf :Awards ;
+     rdfs:comment "American film institute awards"@en .
+
+
+###  http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#Actor
+:Actor rdf:type owl:Class ;
+       rdfs:subClassOf :Person ;
+       rdfs:comment "Actors in the film"@en ;
+       rdfs:seeAlso "https://dbpedia.org/page/Actor"@en .
+
+
+###  http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#Actress
+:Actress rdf:type owl:Class ;
+         rdfs:subClassOf :Person ;
+         rdfs:comment "Actress in the film"@en .
+
+
+###  http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#Average
+:Average rdf:type owl:Class ;
+         rdfs:subClassOf :RatingDesc .
+
+
+###  http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#Awards
+:Awards rdf:type owl:Class ;
+        rdfs:comment "List of main awards and nomitations receibed by Chernobyl"@en .
+
+
+###  http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#BAFTA
+:BAFTA rdf:type owl:Class ;
+       rdfs:subClassOf :Awards ;
+       rdfs:comment "British Academy of Film and Television Arts awards"@en .
+
+
+###  http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#Character
+:Character rdf:type owl:Class ;
+           rdfs:subClassOf :Person ;
+           rdfs:comment "Main roles in in the serie"@en .
+
+
+###  http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#City
+:City rdf:type owl:Class ;
+      rdfs:subClassOf :Location ;
+      rdfs:comment "Cities where the serie wa recorded"@en .
+
+
+###  http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#Country
+:Country rdf:type owl:Class ;
+         rdfs:subClassOf :Location ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :wasReleasedon ;
+                           owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                           owl:onClass :Release_Date
+                         ] ;
+         rdfs:comment "Countries where the serie wa recorded"@en .
+
+
+###  http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#Creator
+:Creator rdf:type owl:Class ;
+         rdfs:subClassOf :Person ;
+         rdfs:comment "Serie creator"@en .
+
+
+###  http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#Emmy
+:Emmy rdf:type owl:Class ;
+      rdfs:subClassOf :Awards ;
+      rdfs:comment "Academy of Television Arts & Sciences awards"@en ;
+      rdfs:seeAlso "https://dbpedia.org/page/Emmy_Awards"@en .
+
+
+###  http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#Episode
+:Episode rdf:type owl:Class ;
+         rdfs:subClassOf :Seasons ;
+         rdfs:comment "List of serie episodes"@en .
+
+
+###  http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#Genre
+:Genre rdf:type owl:Class ;
+       rdfs:comment "It defies the genre of the series and films, like drama commedy, etc."@en .
+
+
+###  http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#Good
+:Good rdf:type owl:Class ;
+      rdfs:subClassOf :RatingDesc .
+
+
+###  http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#IMDB
+:IMDB rdf:type owl:Class ;
+      rdfs:subClassOf :Ratings ;
+      rdfs:comment "Film rating site"@en .
+
+
+###  http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#Location
+:Location rdf:type owl:Class ;
+          rdfs:comment "Places where the serie was recorded and released"@en .
+
+
+###  http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#Masterpiece
+:Masterpiece rdf:type owl:Class ;
+             rdfs:subClassOf :RatingDesc .
+
+
+###  http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#Metacritic
+:Metacritic rdf:type owl:Class ;
+            rdfs:subClassOf :Ratings ;
+            rdfs:comment "Film rating site"@en .
+
+
+###  http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#Oficial_sites
+:Oficial_sites rdf:type owl:Class ;
+               rdfs:comment "Oficial sites to promete the film like, twitter, facebook, etc."@en .
+
+
+###  http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#Person
+:Person rdf:type owl:Class ;
+        rdfs:comment "Cast & Crew of Chernobyl"@en .
+
+
+###  http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#RatingDesc
+:RatingDesc rdf:type owl:Class ;
+            rdfs:comment "Ratings description"@en .
+
+
+###  http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#Ratings
+:Ratings rdf:type owl:Class ;
+         rdfs:comment "Rating provided by some popular films review sites"@en .
+
+
+###  http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#Release_Date
+:Release_Date rdf:type owl:Class ;
+              rdfs:comment "Dates when the serie was released"@en .
+
+
+###  http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#Reviews
+:Reviews rdf:type owl:Class ;
+         rdfs:comment "Reviews written by fans"@en .
+
+
+###  http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#Rottentomatoes
+:Rottentomatoes rdf:type owl:Class ;
+                rdfs:subClassOf :Ratings ;
+                rdfs:comment "Film rating site"@en .
+
+
+###  http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#Seasons
+:Seasons rdf:type owl:Class ;
+         rdfs:comment "Serie seasons"@en .
+
+
+###  http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#Serie
+:Serie rdf:type owl:Class ;
+       rdfs:subClassOf [ rdf:type owl:Restriction ;
+                         owl:onProperty :wasRecordedin ;
+                         owl:allValuesFrom :Location
+                       ] ;
+       rdfs:comment "Name of the serie"@en ;
+       rdfs:seeAlso "https://dbpedia.org/page/Series"@en .
+
+
+###  http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#Soundtracks
+:Soundtracks rdf:type owl:Class ;
+             rdfs:comment "List of songs that you can find in different episodes of the serie"@en .
+
+
+###  http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#Studio
+:Studio rdf:type owl:Class ;
+        rdfs:comment "Company that created tghe serie, i.e Netfix, HBO, etc."@en .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#Chernobyl
+:Chernobyl rdf:type owl:NamedIndividual ,
+                    :Serie .
+
+
+###  http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#Episode1
+:Episode1 rdf:type owl:NamedIndividual ,
+                   :Episode ,
+                   :Soundtracks .
+
+
+###  http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#Episode2
+:Episode2 rdf:type owl:NamedIndividual ,
+                   :Episode ,
+                   :Soundtracks .
+
+
+###  http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#Episode3
+:Episode3 rdf:type owl:NamedIndividual ,
+                   :Episode ,
+                   :Soundtracks .
+
+
+###  http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#Italy
+:Italy rdf:type owl:NamedIndividual ,
+                :Country .
+
+
+###  http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#Jared_Harris
+:Jared_Harris rdf:type owl:NamedIndividual ,
+                       :Actor .
+
+
+###  http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#Jessie_Buckley
+:Jessie_Buckley rdf:type owl:NamedIndividual ,
+                         :Actress .
+
+
+###  http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#June2019
+:June2019 rdf:type owl:NamedIndividual ,
+                   :Release_Date .
+
+
+###  http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#Kaunas
+:Kaunas rdf:type owl:NamedIndividual ,
+                 :City .
+
+
+###  http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#Lithuania
+:Lithuania rdf:type owl:NamedIndividual ,
+                    :Country .
+
+
+###  http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#Lyudmilla_Ignatenko
+:Lyudmilla_Ignatenko rdf:type owl:NamedIndividual ,
+                              :Character .
+
+
+###  http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#May2019
+:May2019 rdf:type owl:NamedIndividual ,
+                  :Release_Date .
+
+
+###  http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#Season1
+:Season1 rdf:type owl:NamedIndividual ,
+                  :Seasons .
+
+
+###  http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#Spain
+:Spain rdf:type owl:NamedIndividual ,
+                :Country .
+
+
+###  http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#Ukraine
+:Ukraine rdf:type owl:NamedIndividual ,
+                  :Country .
+
+
+###  http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#Valery_Legasov
+:Valery_Legasov rdf:type owl:NamedIndividual ,
+                         :Character .
+
+
+###  http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#Vilnius
+:Vilnius rdf:type owl:NamedIndividual ,
+                  :City .
+
+
+###  http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#4
+<http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#4> rdf:type owl:NamedIndividual ,
+                                                                                      :Metacritic .
+
+
+###  http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#5
+<http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#5> rdf:type owl:NamedIndividual ,
+                                                                                      :Rottentomatoes .
+
+
+###  http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#9
+<http://www.semanticweb.org/1117700/ontologies/2022/3/untitled-ontology-8#9> rdf:type owl:NamedIndividual ,
+                                                                                      :IMDB .
+
+
+#################################################################
+#    Rules
+#################################################################
+
+<urn:swrl:var#e> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<urn:swrl:var#w> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<urn:swrl:var#s> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<urn:swrl:var#r> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Serie ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#s>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasRating ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#s> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#r>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#lessThan> ;
+                                                                             <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                                          rdf:first <urn:swrl:var#r> ;
+                                                                                                                          rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                     rdf:first 6 ;
+                                                                                                                                     rdf:rest rdf:nil
+                                                                                                                                   ]
+                                                                                                                        ]
+                                                                           ] ;
+                                                                 rdf:rest rdf:nil
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Average ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#s>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Serie ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#s>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasRating ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#s> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#r>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThan> ;
+                                                                             <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                                          rdf:first <urn:swrl:var#r> ;
+                                                                                                                          rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                     rdf:first 8 ;
+                                                                                                                                     rdf:rest rdf:nil
+                                                                                                                                   ]
+                                                                                                                        ]
+                                                                           ] ;
+                                                                 rdf:rest rdf:nil
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Masterpiece ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#s>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Episode ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#e>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasReview ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#e> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#w>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#contains> ;
+                                                                             <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                                          rdf:first <urn:swrl:var#w> ;
+                                                                                                                          rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                     rdf:first "good" ;
+                                                                                                                                     rdf:rest rdf:nil
+                                                                                                                                   ]
+                                                                                                                        ]
+                                                                           ] ;
+                                                                 rdf:rest rdf:nil
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Good ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#e>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
